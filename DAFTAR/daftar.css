@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("tanah.jpg") no-repeat;
+  background: url("terasering.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -75,7 +75,7 @@ body {
   background-color: rgb(173, 183, 215);
 }
 .login a {
-  color: rgb(18, 28, 107);
+  color: rgb(141, 132, 38);
 }
 
 .forgot {
@@ -89,14 +89,4 @@ body {
 .forgot a :hover {
   animation: ease-in;
   text-decoration: dashed;
-  background-color: aquamarine;
-}
-
-.daftar {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.daftar a {
-  color: azure;
 }
