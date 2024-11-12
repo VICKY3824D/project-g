@@ -1,0 +1,45 @@
+@startuml
+
+' Definisikan tabel petani
+entity petani {
+  * id_petani : int <<PK>> 
+  --
+  username : varchar(100)
+  pwd : varchar(100)
+  nama : varchar(100)
+  luas_tanah : int
+}
+
+' Definisikan tabel panenan
+entity panenan {
+  * id_panenan : varchar(1000) <<PK>> 
+  --
+  hasil_panen : varchar(100)
+  berat_ton : int
+  waktu_tanam_hari : int
+}
+
+' Definisikan tabel tanduran
+entity tanduran {
+  * id_tanduran : int <<PK>> 
+  --
+  nama_tanduran : varchar(100)
+  jenis : varchar(100)
+  waktu_tanam_hari : int
+}
+
+' Hubungan antara tabel
+
+petani ||--|| panenan
+note on link
+ Menanam
+end note
+
+tanduran ||--|| panenan
+note on link
+ Ditanam
+end note
+
+
+
+@enduml
