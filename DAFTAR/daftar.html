@@ -12,11 +12,30 @@
       <h1>Daftar</h1>
       <form action="">
         <div class="kata"><input type="text" placeholder="Username" /><i class="bx bxs-user"></i></div>
-        <div class="kata"><input type="password" placeholder="Password" /><i class="bx bxs-lock-alt"></i></div>
+        <div class="kata"><input type="password" placeholder="Password" /></div>
 
         <div class="login">
-          <button type="submit" class="button"><a href="/after/after.html">DAFTAR</a></button>
+          <button type="submit" class="tombol"><a href="/landingpage/home.html">DAFTAR</a></button>
         </div>
+
+        <div class="sign-in">
+          <a> sudah punya akun?</a>
+          <a class = "login-di-sini" href="/MASUK/login.html">login di sini</a>
+        </div>
+        <div>
+
+          <button class = "mata" onclick="togglePassword()"></button>
+
+        <script>
+          function togglePassword() {
+            const passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+              passwordField.type = "text";
+            } else {
+              passwordField.type = "password";
+            }
+          }
+        </script>
       </form>
     </div>
   </body>
