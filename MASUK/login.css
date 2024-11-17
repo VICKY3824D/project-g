@@ -77,6 +77,14 @@ body {
   color: #fff;
 }
 
+.lupa-password:hover {
+  color: rgb(15, 216, 79);
+}
+
+.lupa-password {
+  color: rgb(117, 255, 165);
+}
+
 .login button {
   width: 100%;
   height: 40px;
@@ -100,9 +108,6 @@ body {
 .forgot {
   text-align: center;
   margin-top: 20px;
-}
-.forgot a {
-  color: white;
 }
 
 .forgot a :hover {
