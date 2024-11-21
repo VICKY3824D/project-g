@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   color: #fff;
+  overflow: hidden;
 }
 
 .wrap h1 {
@@ -49,7 +50,7 @@ body {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .kata input::placeholder {
@@ -94,7 +95,7 @@ a {
 
 .sign-in {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .login-di-sini {
@@ -106,4 +107,44 @@ a {
 
 .sign-in a:hover {
   animation-delay: inherit;
+}
+
+.mata {
+  position: absolute;
+  left: 215px;
+  top: 50%;
+  transform: translateY(-50%);
+  all: unset;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.mata i {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.zoom-in {
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+/* Animasi zoom out untuk ikon mata */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }
